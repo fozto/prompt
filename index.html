@@ -56,16 +56,37 @@ footer{margin-top:25px;padding-top:15px;border-top:1px solid #29334a;color:#9ca9
 </main>
 
 <script>
-const prompts=[
-["Video Iklan Produk","Video AI","video iklan tiktok reels",
-`Buat video iklan [PRODUK] berdurasi 8–10 detik, vertikal 9:16. Gunakan gambar referensi untuk menjaga bentuk, warna, label, dan detail produk. Tampilkan talent Indonesia berhijab di [LOKASI], gerakan natural, hook visual menarik, demonstrasi singkat, dan penutup yang menampilkan produk dengan jelas. Pencahayaan estetik. Tanpa teks tambahan, watermark, atau perubahan desain produk.`],
-["Nama klub,
- `50 Ide Nama Klub Sepak Bola Indonesia Bernuansa Spanyol: A. Sangar dan Garang: 1. Leónh (makna simbolis: singa perkasa yang melambangkan kekuatan dan keberanian); 2. Honrón (makna simbolis: petarung terhormat yang pantang menyerah); 3. Bravón (makna simbolis: sosok pemberani dengan mental baja); 4. Fénhix (makna simbolis: kebangkitan dan kekuatan seperti burung phoenix); 5. Torhán (makna simbolis: banteng tangguh yang tak mudah ditaklukkan); 6. Sanghéro (makna simbolis: pahlawan yang berjuang dengan gagah berani); 7. Truenho (makna simbolis: kekuatan dahsyat seperti guntur); 8. Dragónh (makna simbolis: naga perkasa yang ditakuti lawan); 9. Guerrón (makna simbolis: pejuang tangguh yang selalu siap bertarung); 10. Valhón (makna simbolis: keberanian dan kekuatan seorang kesatria); 11. Hierón (makna simbolis: keteguhan seperti besi); 12. Titanh (makna simbolis: raksasa kuat dengan mental juara); 13. Furhán (makna simbolis: amarah kompetitif dan semangat membara). B. Elegan Seperti Klub Profesional Spanyol: 14. Unión Real (persatuan kerajaan, melambangkan kebanggaan dan kehormatan); 15. Honra FC (honra berarti kehormatan dalam bahasa Spanyol); 16. León Norte (singa utara, simbol kekuatan dan identitas); 17. Nuevo Horizonte (cakrawala baru, simbol harapan dan masa depan); 18. Hispanh (makna simbolis: identitas Hispanik dengan sentuhan modern); 19. Sanhéro (makna simbolis: klub berjiwa kesatria dan bermartabat); 20. Montenh (makna simbolis: kekuatan kokoh seperti pegunungan); 21. Reinhold (makna simbolis: kepemimpinan dan kehormatan, dengan nuansa nama Eropa); 22. Honorán (makna simbolis: kehormatan dan kewibawaan klub); 23. Valenhor (makna simbolis: keberanian dan kehormatan dalam satu identitas); 24. Granhéro (makna simbolis: pahlawan besar yang membawa kebanggaan); 25. Novahén (makna simbolis: awal baru dengan karakter elegan). C. Unik dan Modern: 26. Nohara (makna simbolis: kekuatan kolektif dan identitas khas); 27. Henova (makna simbolis: pembaruan, inovasi, dan semangat juang); 28. Nharvo (makna simbolis: ketangguhan dan keberanian modern); 29. Honvex (makna simbolis: kehormatan dengan karakter agresif); 30. Nexhón (makna simbolis: generasi baru yang bermental juara); 31. Nohvian (makna simbolis: perjalanan menuju kejayaan); 32. Hanvero (makna simbolis: keberanian dan loyalitas); 33. Nuvharo (makna simbolis: kebangkitan klub dengan energi baru); 34. Harnexo (makna simbolis: persatuan dan koneksi antarpemain); 35. Nahrion (makna simbolis: kekuatan yang tumbuh dari kebersamaan); 36. Vanhéro (makna simbolis: kesatria modern yang berani); 37. Orhena (makna simbolis: kebanggaan, kehormatan, dan identitas unik). D. Memiliki Makna Mendalam: 38. Honor (kehormatan, martabat, dan integritas); 39. Unión (persatuan dan kebersamaan); 40. Triunfo (kemenangan dan keberhasilan); 41. Esperanza (harapan dan keyakinan akan masa depan); 42. Fortaleza (kekuatan, ketahanan, dan benteng yang kokoh); 43. Hermandad (persaudaraan dan solidaritas); 44. Honradez (kejujuran dan integritas); 45. Lealtad (kesetiaan dan loyalitas); 46. Renhova (makna simbolis: pembaruan dan kebangkitan); 47. Alhanza (makna simbolis: aliansi dan persatuan); 48. Valhencia (makna simbolis: keberanian dan kejayaan); 49. Enhorna (makna simbolis: kehormatan yang ditempa melalui perjuangan); 50. Triunhón (makna simbolis: kemenangan besar dan mental juara). 10 Nama Terbaik: 1. Leónh — pendek, garang, dan memiliki simbol singa yang kuat untuk logo serta maskot; 2. Honra FC — elegan, mudah diucapkan, dan bermakna kehormatan; 3. Guerrón — terdengar agresif dan cocok untuk klub dengan identitas petarung; 4. Unión Real — terasa profesional, berkelas, dan menonjolkan persatuan; 5. Nexhón — modern, unik, dan mudah dijadikan identitas digital; 6. Triunhón — memiliki nuansa kemenangan besar dan cocok untuk chant suporter; 7. Valenhor — terdengar tegas serta menggabungkan makna keberanian dan kehormatan; 8. Henova — ringkas, futuristis, dan mudah diaplikasikan pada jersey; 9. León Norte — kuat secara visual dan cocok untuk identitas klub regional; 10. Hermandad — memiliki makna persaudaraan yang mendalam dan cocok untuk membangun loyalitas suporter. Catatan: semua nama di atas mengandung huruf N dan H, tetapi sejumlah nama merupakan racikan kreatif sehingga artinya bersifat simbolis, bukan arti resmi dalam bahasa Spanyol.`
-["Foto Produk","Gambar AI","foto katalog produk aesthetic",
-`Buat foto komersial premium [PRODUK] dengan latar [LOKASI]. Pertahankan bentuk, warna, kemasan, label, dan detail sesuai referensi. Gunakan pencahayaan lembut, bayangan realistis, komposisi minimalis, detail tajam, dan rasio [RASIO]. Jangan menambahkan tulisan atau produk lain.`],
-["Voice Over Hook","Naskah","voice over hook jualan",
-`Buat 5 voice over iklan [PRODUK], maksimal 8 detik masing-masing. Gunakan bahasa Indonesia natural dengan hook kuat pada 2 detik pertama. Tonjolkan manfaat nyata [MANFAAT] dan akhiri dengan ajakan melihat produk. Hindari klaim berlebihan. Tampilkan naskah saja.`],
-["Caption & Hashtag","Sosial","caption hashtag tiktok seo",`Buat 5 konsep video [PRODUK] untuk [PLATFORM]. Setiap konsep berisi hook 2 detik, urutan adegan, manfaat produk, voice over singkat, dan penutup. Variasikan demonstrasi, masalah-solusi, detail produk, rutinitas, dan rekomendasi. Pastikan realistis dan tanpa klaim yang belum terbukti.`]
+const prompts = [
+  [
+    "Video Iklan Produk",
+    "Video AI",
+    "video iklan tiktok reels",
+    `Buat video iklan [PRODUK] berdurasi 8–10 detik, vertikal 9:16. Gunakan gambar referensi untuk menjaga bentuk, warna, label, dan detail produk. Tampilkan talent Indonesia berhijab di [LOKASI], gerakan natural, hook visual menarik, demonstrasi singkat, dan penutup yang menampilkan produk dengan jelas. Pencahayaan estetik. Tanpa teks tambahan, watermark, atau perubahan desain produk.`
+  ],
+  [
+    "Nama Klub Sepak Bola",
+    "Ide Nama",
+    "nama klub bola spanyol",
+    `Buat 50 ide nama klub sepak bola Indonesia bernuansa Spanyol. Setiap nama wajib mengandung huruf N dan H, mudah diucapkan, terdengar profesional, dan cocok untuk logo, jersey, serta chant suporter. Kelompokkan menjadi nama garang, elegan, modern, dan bermakna mendalam. Berikan 10 rekomendasi terbaik beserta alasan pemilihannya. Tandai nama racikan kreatif yang bukan kata resmi bahasa Spanyol.`
+  ],
+  [
+    "Foto Produk",
+    "Gambar AI",
+    "foto katalog produk aesthetic",
+    `Buat foto komersial premium [PRODUK] dengan latar [LOKASI]. Pertahankan bentuk, warna, kemasan, label, dan detail sesuai referensi. Gunakan pencahayaan lembut, bayangan realistis, komposisi minimalis, detail tajam, dan rasio [RASIO]. Jangan menambahkan tulisan atau produk lain.`
+  ],
+  [
+    "Voice Over Hook",
+    "Naskah",
+    "voice over hook jualan",
+    `Buat 5 voice over iklan [PRODUK], maksimal 8 detik masing-masing. Gunakan bahasa Indonesia natural dengan hook kuat pada 2 detik pertama. Tonjolkan manfaat nyata [MANFAAT] dan akhiri dengan ajakan melihat produk. Hindari klaim berlebihan. Tampilkan naskah saja.`
+  ],
+  [
+    "Caption & Hashtag",
+    "Sosial",
+    "caption hashtag tiktok seo",
+    `Buat 5 konsep video [PRODUK] untuk [PLATFORM]. Setiap konsep berisi hook 2 detik, urutan adegan, manfaat produk, voice over singkat, dan penutup. Variasikan demonstrasi, masalah-solusi, detail produk, rutinitas, dan rekomendasi. Pastikan realistis dan tanpa klaim yang belum terbukti.`
+  ]
 ];
 
 const grid=document.getElementById("grid");
