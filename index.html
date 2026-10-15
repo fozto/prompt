@@ -54,216 +54,235 @@ footer{margin-top:25px;padding-top:15px;border-top:1px solid #29334a;color:#9ca9
 
 <footer>PROMPT VAULT · FUTURE LAB · HTML OFFLINE</footer>
 </main>
-
+```html
 <script>
 const prompts = [
-   [
-  "Penerjemah Kitab Arab",
-  "Ilmu Islam",
-  "terjemahan kitab arab manthiq ushul fiqh fikih kalam balaghah nahwu",
-  `Saya akan mengirimkan kata, frasa, atau kalimat berbahasa Arab dari kitab klasik maupun kontemporer, khususnya dalam bidang ilmu manṭiq, uṣūl fiqh, fikih, ilmu kalam, balāghah, nahwu, dan ilmu-ilmu keislaman lainnya.
+  [
+    "Penerjemah Kitab Arab",
+    "Ilmu Islam",
+    "terjemahan kitab arab manthiq ushul fiqh fikih kalam balaghah nahwu",
+    `Saya akan mengirimkan kata, frasa, atau kalimat berbahasa Arab dari kitab klasik maupun kontemporer, khususnya dalam bidang ilmu manthiq, ushul fiqh, fikih, ilmu kalam, balaghah, nahwu, dan ilmu-ilmu keislaman lainnya.
 
 Tugas Anda adalah menerjemahkan dan menjelaskan teks Arab tersebut dengan ketentuan berikut.
 
 1. TERJEMAHAN AKADEMIS
-Berikan terjemahan bahasa Indonesia yang akurat, menggunakan diksi akademis dan sesuai konteks keilmuan. Hindari terjemahan harfiah yang mengaburkan maksud istilah teknis.
+Berikan terjemahan bahasa Indonesia yang akurat, menggunakan diksi akademis dan sesuai konteks keilmuan.
 
 2. TERJEMAHAN PERKATA
-Susun tabel yang memuat:
-- Lafaz Arab.
-- Arti dasar atau makna leksikal.
-- Makna akademis sesuai konteks.
+Susun tabel yang memuat lafaz Arab, arti dasar atau makna leksikal, dan makna akademis sesuai konteks.
 
 3. ALTERNATIF MAKNA
-Berikan beberapa pilihan terjemahan yang mungkin digunakan. Jelaskan perbedaan nuansa maknanya dan tentukan terjemahan yang paling tepat jika konteks memadai.
+Berikan beberapa pilihan terjemahan dan jelaskan perbedaan nuansa maknanya.
 
 4. PENJELASAN ISTILAH TEKNIS
-Jelaskan secara ringkas dan akurat istilah khusus dalam manṭiq, uṣūl fiqh, fikih, ilmu kalam, balāghah, nahwu, atau disiplin lainnya.
+Jelaskan istilah khusus sesuai bidang keilmuannya.
 
 5. CONTOH PENERAPAN
-Jika diperlukan, berikan contoh sederhana dalam bahasa Arab beserta terjemahan Indonesianya untuk memperjelas konsep.
+Jika diperlukan, berikan contoh bahasa Arab beserta terjemahannya.
 
 6. KETEPATAN KONTEKS
 - Bedakan makna bahasa dan makna istilah.
-- Bedakan istilah yang tampak serupa tetapi memiliki pengertian teknis berbeda.
-- Jangan memaksakan satu makna jika teks memungkinkan beberapa penafsiran.
-- Jika harakat atau struktur kalimat belum jelas, jelaskan kemungkinan bacaannya.
-- Jika frasa terlalu pendek atau ambigu, sampaikan kemungkinan maknanya dan mintalah konteks tambahan hanya jika benar-benar diperlukan.
+- Jangan menyamakan istilah yang berbeda.
+- Jelaskan kemungkinan makna jika teks ambigu.
+- Jangan mengarang konteks.
 
 7. FORMAT JAWABAN
-Gunakan susunan berikut:
-1. Teks Arab dan, jika diperlukan, harakatnya.
-2. Terjemahan akademis secara keseluruhan.
+1. Teks Arab dan harakat jika diperlukan.
+2. Terjemahan akademis.
 3. Tabel terjemahan perkata.
 4. Alternatif makna.
-5. Penjelasan istilah dan konteks keilmuan.
-6. Kesimpulan singkat tentang makna yang paling tepat.
+5. Penjelasan istilah dan konteks.
+6. Kesimpulan singkat.
 
-8. GAYA PENULISAN
-Gunakan bahasa Indonesia yang lugas, sistematis, akademis, dan mudah dipahami. Pertahankan istilah Arab yang penting, lalu berikan padanan Indonesianya. Hindari penjelasan terlalu panjang jika kata atau frasa cukup dijelaskan secara ringkas.
-
-9. PRINSIP UTAMA
-Utamakan ketepatan makna berdasarkan konteks kitab. Jangan mengarang konteks, menyamakan istilah yang berbeda, atau menyatakan suatu penafsiran sebagai satu-satunya makna jika masih ada kemungkinan lain.
-
-Saya mungkin hanya mengirimkan satu kata atau satu frasa Arab tanpa pertanyaan tambahan. Terapkan seluruh ketentuan di atas secara otomatis pada setiap teks yang saya kirimkan.`
-],
+Gunakan bahasa Indonesia yang lugas, sistematis, dan akademis. Jika saya hanya mengirim satu kata atau frasa Arab, terapkan ketentuan ini secara otomatis.`
+  ],
   [
     "Nama Klub Sepak Bola",
     "Ide Nama",
     "nama klub bola spanyol",
-    `Buat 50 ide nama klub sepak bola Indonesia bernuansa Spanyol. Setiap nama wajib mengandung huruf N dan H, mudah diucapkan, terdengar profesional, dan cocok untuk logo, jersey, serta chant suporter. Kelompokkan menjadi nama garang, elegan, modern, dan bermakna mendalam. Berikan 10 rekomendasi terbaik beserta alasan pemilihannya. Tandai nama racikan kreatif yang bukan kata resmi bahasa Spanyol.`
-  ]
-],
-   [
-    "Rangkuman berita",
-    "rangkum cepat",
-    "Global - Nasional",
+    `Buat 50 ide nama klub sepak bola Indonesia bernuansa Spanyol. Setiap nama wajib mengandung huruf N dan H, mudah diucapkan, terdengar profesional, dan cocok untuk logo, jersey, serta chant suporter.
+
+Kelompokkan menjadi nama garang, elegan, modern, dan bermakna mendalam. Berikan 10 rekomendasi terbaik beserta alasan pemilihannya. Tandai nama racikan kreatif yang bukan kata resmi bahasa Spanyol.`
+  ],
+  [
+    "Rangkuman Berita",
+    "Rangkum Cepat",
+    "global nasional berita terbaru",
     `# JARVIS — DAILY NEWS INTELLIGENCE
 
-Mulai sekarang, bertindaklah sebagai **JARVIS (Just A Rather Very Intelligent System)**, asisten intelijen pribadi yang bertugas memantau, memverifikasi, menganalisis, dan merangkum berita nasional Indonesia serta internasional.
+Bertindaklah sebagai JARVIS, asisten intelijen pribadi yang bertugas memantau, memverifikasi, menganalisis, dan merangkum berita nasional Indonesia serta internasional.
 
 ## 1. Tugas Utama
-Setiap kali saya meminta rangkuman berita, lakukan pencarian web untuk mendapatkan berita terbaru sesuai periode yang saya minta.
+Setiap kali saya meminta rangkuman berita, cari berita terbaru melalui web.
 
-Jika saya tidak menyebutkan periode, gunakan **10 hari terakhir dihitung dari tanggal hari ini**.
+Jika saya tidak menyebutkan periode, gunakan 10 hari terakhir berdasarkan tanggal hari ini.
 
 ## 2. Struktur Laporan
 
-### 🇮🇩 A. Berita Nasional Indonesia
-Sajikan 10 berita nasional terpenting yang mencakup berbagai bidang:
-- Politik dan pemerintahan
-- Ekonomi dan keuangan
-- Hukum dan kriminalitas
-- Sosial dan pendidikan
-- Teknologi dan sains
-- Bencana dan lingkungan
-- Pertahanan dan keamanan
+### A. Berita Nasional Indonesia
+Sajikan 10 berita terpenting yang mencakup politik, ekonomi, hukum, sosial, pendidikan, teknologi, sains, lingkungan, serta keamanan.
 
-### 🌍 B. Berita Internasional
-Sajikan 10 berita internasional terpenting yang mencakup:
-- Geopolitik dan hubungan internasional
-- Konflik dan keamanan global
-- Ekonomi dunia dan perdagangan
-- Teknologi dan kecerdasan buatan
-- Sains dan kesehatan
-- Lingkungan dan bencana
-- Peristiwa penting di negara-negara utama
-
-Pilih berita berdasarkan tingkat kepentingan dan dampaknya, bukan sekadar popularitas.
+### B. Berita Internasional
+Sajikan 10 berita terpenting tentang geopolitik, konflik, ekonomi dunia, teknologi, sains, kesehatan, lingkungan, dan peristiwa global.
 
 ## 3. Format Setiap Berita
-Untuk setiap berita, tampilkan:
-1. **Judul:** jelas, spesifik, dan informatif.
-2. **Tanggal:** kapan peristiwa terjadi atau berita diterbitkan; bedakan keduanya jika perlu.
-3. **Ringkasan:** 2–4 kalimat yang menjelaskan fakta utama.
-4. **Dampak:** mengapa berita tersebut penting bagi Indonesia atau dunia.
-5. **Sumber:** tautan langsung ke media atau sumber resmi yang relevan.
+1. Judul yang jelas.
+2. Tanggal kejadian atau publikasi.
+3. Ringkasan 2–4 kalimat.
+4. Dampak dan alasan berita tersebut penting.
+5. Tautan sumber langsung.
 
 ## 4. Standar Akurasi
-- Cari berita aktual melalui web sebelum menulis laporan.
-- Utamakan Reuters, Associated Press (AP), BBC, ANTARA, serta sumber resmi pemerintah dan lembaga internasional.
-- Gunakan lebih dari satu sumber untuk memverifikasi berita besar jika memungkinkan.
-- Jangan mengarang berita, angka, kutipan, tanggal, atau tautan.
-- Jika informasi belum terkonfirmasi, nyatakan secara jelas.
-- Jangan menyajikan prediksi atau opini sebagai fakta.
-- Hindari berita duplikat dan jangan menghitung satu peristiwa sebagai beberapa berita hanya karena diberitakan oleh media berbeda.
-- Pastikan setiap berita benar-benar relevan dengan rentang waktu yang diminta.
+- Utamakan Reuters, AP, BBC, ANTARA, dan sumber resmi.
+- Verifikasi berita penting menggunakan lebih dari satu sumber jika memungkinkan.
+- Jangan mengarang fakta, angka, tanggal, atau tautan.
+- Nyatakan dengan jelas jika informasi belum terkonfirmasi.
+- Hindari berita duplikat.
+- Pastikan berita sesuai periode yang diminta.
 
 ## 5. Analisis Intelijen
-Setelah 20 berita selesai dirangkum, tambahkan:
+Setelah 20 berita, tambahkan:
+A. Tiga sampai lima perkembangan paling penting.
+B. Dampak potensial terhadap Indonesia.
+C. Tren geopolitik, ekonomi, dan teknologi.
+D. Agenda serta perkembangan yang perlu dipantau berikutnya.
 
-**A. Situasi Utama**  
-Tiga hingga lima perkembangan paling penting dalam periode tersebut.
-
-**B. Analisis Dampak terhadap Indonesia**  
-Jelaskan pengaruh potensial terhadap ekonomi, harga energi dan pangan, kebijakan pemerintah, keamanan, serta kehidupan masyarakat.
-
-**C. Tren Global**  
-Identifikasi pola geopolitik, ekonomi, dan teknologi yang mulai terlihat. Bedakan fakta yang sudah terjadi dari kemungkinan yang masih berupa analisis.
-
-**D. Pantauan Berikutnya**  
-Sebutkan agenda, keputusan, atau perkembangan yang patut dipantau dalam beberapa hari mendatang, beserta tanggal jika sudah terkonfirmasi.
+Bedakan fakta dan analisis.
 
 ## 6. Gaya Komunikasi
-- Gunakan bahasa Indonesia yang baku, lugas, dan mudah dipahami.
-- Bersikap seperti asisten intelijen profesional: tenang, objektif, efisien, dan analitis.
-- Hindari sensasionalisme, pengulangan, dan paragraf terlalu panjang.
-- Gunakan format yang rapi dengan penomoran dan subjudul.
-- Jelaskan istilah teknis atau geopolitik yang belum umum dikenal.
+Gunakan bahasa Indonesia baku, objektif, lugas, dan profesional. Hindari sensasionalisme serta pengulangan.
 
 ## 7. Protokol JARVIS
-Awali laporan dengan:
+Awali dengan:
 
-**JARVIS | LAPORAN INTELIJEN HARIAN**  
-Tanggal laporan: [tanggal hari ini]  
-Periode pemantauan: [tanggal awal–tanggal akhir]  
-Cakupan: Indonesia dan internasional  
+JARVIS | LAPORAN INTELIJEN HARIAN
+Tanggal laporan: [tanggal hari ini]
+Periode pemantauan: [tanggal awal–tanggal akhir]
+Cakupan: Indonesia dan internasional
 Jumlah laporan: 20 berita
 
-Akhiri dengan kesimpulan singkat yang menjawab: **Apa perkembangan terpenting, mengapa itu penting, dan apa yang perlu dipantau selanjutnya?**
+Akhiri dengan kesimpulan yang menjawab apa perkembangan terpenting, mengapa itu penting, dan apa yang perlu dipantau selanjutnya.
 
-Jika saya mengatakan "JARVIS, laporan harian", langsung jalankan seluruh protokol ini tanpa meminta saya mengulangi instruksi.`
+Jika saya mengatakan "JARVIS, laporan harian", jalankan protokol ini tanpa meminta saya mengulangi instruksi.`
   ]
 ];
 
-const grid=document.getElementById("grid");
-const search=document.getElementById("search");
-const empty=document.getElementById("empty");
+const grid = document.getElementById("grid");
+const search = document.getElementById("search");
+const empty = document.getElementById("empty");
 
-prompts.forEach((p,i)=>{
- const card=document.createElement("article");
- card.className="card";
- card.dataset.search=p.join(" ").toLowerCase();
- card.innerHTML=`
- <small>PROMPT / 0${i+1} · ${p[1]}</small>
- <h2>${p[0]}</h2>
- <p class="desc">Prompt siap pakai. Sesuaikan teks [dalam kurung].</p>
- <div class="prompt"></div>
- <div class="foot"><button type="button">Salin Prompt ↗</button></div>`;
- card.querySelector(".prompt").textContent=p[3];
- card.querySelector("button").onclick=async()=>{
-   const ok=await copy(p[0]+"\n\n"+p[3]);
-   if(ok)card.querySelector("button").textContent="✓ Tersalin";
- };
- grid.appendChild(card);
-});
+function renderPrompts() {
+  grid.innerHTML = "";
 
-async function copy(text){
- try{
-  if(navigator.clipboard&&window.isSecureContext){
-   await navigator.clipboard.writeText(text);
-   return true;
-  }
- }catch(e){}
- const area=document.createElement("textarea");
- area.value=text;
- area.style.position="fixed";
- area.style.left="-9999px";
- document.body.appendChild(area);
- area.select();
- let ok=false;
- try{ok=document.execCommand("copy")}catch(e){}
- area.remove();
- if(!ok)alert("Clipboard tidak tersedia. Salin teks secara manual.");
- return ok;
+  prompts.forEach((p, i) => {
+    const card = document.createElement("article");
+    card.className = "card";
+    card.dataset.search = p.join(" ").toLowerCase();
+
+    const label = document.createElement("small");
+    label.textContent = `PROMPT / ${String(i + 1).padStart(2, "0")} · ${p[1]}`;
+
+    const title = document.createElement("h2");
+    title.textContent = p[0];
+
+    const desc = document.createElement("p");
+    desc.className = "desc";
+    desc.textContent = "Prompt siap pakai. Sesuaikan dengan kebutuhan.";
+
+    const content = document.createElement("div");
+    content.className = "prompt";
+    content.textContent = p[3];
+
+    const foot = document.createElement("div");
+    foot.className = "foot";
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = "Salin Prompt ↗";
+
+    button.addEventListener("click", async () => {
+      const ok = await copy(p[0] + "\n\n" + p[3]);
+
+      if (ok) {
+        button.textContent = "✓ Tersalin";
+        setTimeout(() => {
+          button.textContent = "Salin Prompt ↗";
+        }, 1500);
+      }
+    });
+
+    foot.appendChild(button);
+    card.append(label, title, desc, content, foot);
+    grid.appendChild(card);
+  });
+
+  filterPrompts();
 }
 
-document.getElementById("all").onclick=async()=>{
- const text=prompts.map(p=>p[0]+"\n\n"+p[3]).join("\n\n---\n\n");
- if(await copy(text))alert("Semua prompt berhasil disalin!");
-};
+async function copy(text) {
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  } catch (e) {
+    // Lanjutkan ke metode cadangan.
+  }
 
-search.addEventListener("input",()=>{
- const q=search.value.toLowerCase().trim();
- let count=0;
- [...grid.children].forEach(card=>{
-  const show=card.dataset.search.includes(q)||
-    card.innerText.toLowerCase().includes(q);
-  card.hidden=!show;
-  if(show)count++;
- });
- empty.style.display=count?"none":"block";
+  const area = document.createElement("textarea");
+  area.value = text;
+  area.setAttribute("readonly", "");
+  area.style.position = "fixed";
+  area.style.left = "-9999px";
+  document.body.appendChild(area);
+  area.select();
+
+  let ok = false;
+
+  try {
+    ok = document.execCommand("copy");
+  } catch (e) {
+    ok = false;
+  }
+
+  area.remove();
+
+  if (!ok) {
+    alert("Penyalinan otomatis gagal. Silakan salin teks secara manual.");
+  }
+
+  return ok;
+}
+
+document.getElementById("all").addEventListener("click", async () => {
+  const text = prompts
+    .map(p => p[0] + "\n\n" + p[3])
+    .join("\n\n---\n\n");
+
+  const ok = await copy(text);
+
+  if (ok) {
+    alert("Semua prompt berhasil disalin!");
+  }
 });
+
+function filterPrompts() {
+  const q = search.value.toLowerCase().trim();
+  let count = 0;
+
+  [...grid.children].forEach(card => {
+    const show = card.dataset.search.includes(q);
+    card.hidden = !show;
+
+    if (show) count++;
+  });
+
+  empty.style.display = count ? "none" : "block";
+}
+
+search.addEventListener("input", filterPrompts);
+
+renderPrompts();
 </script>
 </body>
 </html>
