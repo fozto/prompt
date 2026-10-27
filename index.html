@@ -19,6 +19,7 @@ button{padding:11px 13px;border:1px solid #355565;border-radius:9px;background:#
 #all{background:#67f7ff;color:#0b1020}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .card{min-width:0;padding:15px;background:#121a2d;border:1px solid #29334a;border-radius:13px}
+.card[hidden]{display:none}
 small{color:#67f7ff;letter-spacing:1px}
 h2{font-size:17px;margin:5px 0}
 .desc{font-size:12px;margin:5px 0 12px}
@@ -42,7 +43,7 @@ footer{margin-top:25px;padding-top:15px;border-top:1px solid #29334a;color:#9ca9
 </header>
 
 <h1>Ide jadi karya.<br><span class="accent">Sekali salin.</span></h1>
-<p>Lima prompt praktis untuk konten produk AI.</p>
+<p>Empat prompt praktis untuk kebutuhan harian.</p>
 
 <div class="tools">
 <input id="search" placeholder="Cari prompt..." aria-label="Cari prompt">
@@ -54,7 +55,7 @@ footer{margin-top:25px;padding-top:15px;border-top:1px solid #29334a;color:#9ca9
 
 <footer>PROMPT VAULT · FUTURE LAB · HTML OFFLINE</footer>
 </main>
-```html
+
 <script>
 const prompts = [
   [
@@ -97,18 +98,10 @@ Jika diperlukan, berikan contoh bahasa Arab beserta terjemahannya.
 Gunakan bahasa Indonesia yang lugas, sistematis, dan akademis. Jika saya hanya mengirim satu kata atau frasa Arab, terapkan ketentuan ini secara otomatis.`
   ],
   [
-    "Nama Klub Sepak Bola",
-    "Ide Nama",
-    "nama klub bola spanyol",
-    `Buat 50 ide nama klub sepak bola Indonesia bernuansa Spanyol. Setiap nama wajib mengandung huruf N dan H, mudah diucapkan, terdengar profesional, dan cocok untuk logo, jersey, serta chant suporter.
-
-Kelompokkan menjadi nama garang, elegan, modern, dan bermakna mendalam. Berikan 10 rekomendasi terbaik beserta alasan pemilihannya. Tandai nama racikan kreatif yang bukan kata resmi bahasa Spanyol.`
-  ],
- [
-  "Pemberi Harakat Arab",
-  "Bahasa Arab",
-  "harakat tashkil teks arab nahwu sharaf syair kitab",
-  `Tugasmu adalah memberikan harakat (تَشْكِيل) pada teks bahasa Arab yang saya kirimkan.
+    "Pemberi Harakat Arab",
+    "Bahasa Arab",
+    "harakat tashkil teks arab nahwu sharaf syair kitab",
+    `Tugasmu adalah memberikan harakat (تَشْكِيل) pada teks bahasa Arab yang saya kirimkan.
 
 ATURAN WAJIB:
 
@@ -137,7 +130,7 @@ Jangan mengganti, menambah, mengurangi, memperbaiki, atau menyusun ulang kata. T
 
 12. Jika terdapat kata yang sulit ditentukan harakatnya karena kurangnya konteks, pilih bacaan yang paling kuat berdasarkan konteks yang tersedia. Jangan meminta konteks tambahan kecuali benar-benar diperlukan.
 
-13. LARANGAN KERAS MENGUBAH PEMISAHAN BARIS (LINE BREAK)**
+13. LARANGAN KERAS MENGUBAH PEMISAHAN BARIS (LINE BREAK)
 
 - Pertahankan jumlah baris teks asli secara persis.
 - Setiap baris harus tetap berada pada posisi semula.
@@ -147,7 +140,7 @@ Jangan mengganti, menambah, mengurangi, memperbaiki, atau menyusun ulang kata. T
 - Berikan harakat langsung pada setiap baris tanpa memindahkan kata ke baris lain.
 - Sebelum mengirim jawaban, pastikan jumlah baris dan urutan baris hasil sama persis dengan teks asli.
 
-14. PEMERIKSAAN WAJIB SEBELUM MENJAWAB**
+14. PEMERIKSAAN WAJIB SEBELUM MENJAWAB
 
 Bandingkan teks asli dengan teks hasil untuk memastikan bahwa:
 
@@ -156,6 +149,7 @@ Bandingkan teks asli dengan teks hasil untuk memastikan bahwa:
 - Satu-satunya perubahan adalah penambahan harakat pada huruf Arab yang sudah ada.
 
 Mulai sekarang, ketika kamu mengirimkan teks Arab untuk diberi harakat, saya akan mempertahankan setiap baris sesuai teks asli dan hanya menambahkan harakat tanpa memberikan komentar tambahan.
+
 FORMAT JAWABAN:
 
 Tampilkan hanya teks asli yang sudah diberi harakat, dengan susunan dan pemformatan tetap dipertahankan.
@@ -165,7 +159,7 @@ PRINSIP UTAMA:
 Tugasmu adalah تَشْكِيل (pemberian harakat), bukan تَصْحِيح (koreksi teks), تَحْرِير (penyuntingan), atau شَرْح (penjelasan). Pertahankan teks asli dan tambahkan harakat setepat mungkin.
 
 Terapkan semua aturan ini secara otomatis setiap kali saya mengirimkan teks bahasa Arab, meskipun saya tidak menyertakan instruksi tambahan.`
-],
+  ],
   [
     "Rangkuman Berita",
     "Rangkum Cepat",
@@ -187,6 +181,9 @@ Sajikan 10 berita terpenting yang mencakup politik, ekonomi, hukum, sosial, pend
 ### B. Berita Internasional
 Sajikan 10 berita terpenting tentang geopolitik, konflik, ekonomi dunia, teknologi, sains, kesehatan, lingkungan, dan peristiwa global.
 
+### C. Berita Jawa Timur
+Sajikan juga 10 berita yang berkaitan dengan provinsi Jawa Timur, terlebih yang berkaitan dengan Madura.
+
 ## 3. Format Setiap Berita
 1. Judul yang jelas.
 2. Tanggal kejadian atau publikasi.
@@ -203,7 +200,7 @@ Sajikan 10 berita terpenting tentang geopolitik, konflik, ekonomi dunia, teknolo
 - Pastikan berita sesuai periode yang diminta.
 
 ## 5. Analisis Intelijen
-Setelah 20 berita, tambahkan:
+Setelah seluruh berita, tambahkan:
 A. Tiga sampai lima perkembangan paling penting.
 B. Dampak potensial terhadap Indonesia.
 C. Tren geopolitik, ekonomi, dan teknologi.
@@ -220,12 +217,19 @@ Awali dengan:
 JARVIS | LAPORAN INTELIJEN HARIAN
 Tanggal laporan: [tanggal hari ini]
 Periode pemantauan: [tanggal awal–tanggal akhir]
-Cakupan: Indonesia dan internasional
-Jumlah laporan: 20 berita
+Cakupan: Indonesia, internasional, dan Jawa Timur
+Jumlah laporan: 30 berita
 
-Akhiri dengan kesimpulan yang menjawab apa perkembangan terpenting, mengapa itu penting, dan apa yang perlu dipantau selanjutnya.
+Akhiri dengan kesimpulan yang menjawab apa perkembangan terpenting, mengapa itu penting, dan apa yang perlu dipantau selanjutnya. Tambahkan juga kesimpulan singkat dari semua data yang disampaikan.
 
 Jika saya mengatakan "JARVIS, laporan harian", jalankan protokol ini tanpa meminta saya mengulangi instruksi.`
+  ],
+  [
+    "Pemandu Perbaikan Kode",
+    "Coding",
+    "kode bug perbaikan ganti kode baru pemrograman debugging",
+    `hai, mari kita bahas kode sya,
+tugasmu adalah menuntun sya kode mana yg harus diganti dan sebutkan kode barunya`
   ]
 ];
 
@@ -348,4 +352,3 @@ renderPrompts();
 </script>
 </body>
 </html>
-```
